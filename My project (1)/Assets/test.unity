@@ -155,6 +155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10be4bbc0f6ed784e875d6464bcf4d9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  myRigidBody: {fileID: 82536445}
 --- !u!58 &82536444
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -187,9 +188,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.09, y: -0.31}
   serializedVersion: 2
-  m_Radius: 2.3
+  m_Radius: 1.94
 --- !u!50 &82536445
 Rigidbody2D:
   serializedVersion: 4
@@ -277,7 +278,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82536442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -9.09, y: 1.2, z: 0}
+  m_LocalPosition: {x: 0.1, y: 2.1, z: 0}
   m_LocalScale: {x: 0.48894784, y: 0.46327084, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -345,7 +346,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 7.29
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -369,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532734561}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0.46, y: 1.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
