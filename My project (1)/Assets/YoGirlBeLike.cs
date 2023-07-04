@@ -2,10 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BirdScript : MonoBehaviour
+public class YoGirlBeLike : MonoBehaviour
 {
-    public Rigidbody2D myRigidBody;
     // Start is called before the first frame update
+
+    public float moveSpeed = 5;
     void Start()
     {
         
@@ -14,11 +15,6 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) == true)
-
-        {
-            myRigidBody.velocity = Vector2.up * 10;
-
-        }
-     }
+        transform.position = transform.position + (Vector3.left *moveSpeed)*Time.deltaTime;
+    }
 }
