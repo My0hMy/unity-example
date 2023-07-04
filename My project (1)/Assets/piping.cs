@@ -10,6 +10,9 @@ public class piping : MonoBehaviour
     public GameObject pipe;
     public float spawnRate = 2;
     private float timer = 0;
+    public float heightOffset = 10;
+    public float Noman = -45;
+
     void Start()
     {
         SpawnPipe();
@@ -21,19 +24,30 @@ public class piping : MonoBehaviour
 
         if (timer < spawnRate)
         {
-            timer = timer + Time.deltaTime; 
+            timer += Time.deltaTime; 
         }
         else
         {
             SpawnPipe();
             timer = 0;
         }
+
+    if (transform.position.x < Noman){
+    Debug.Log("Pipe deleted");
+    Destroy(gameObject);
+}
+
     }
+
     void SpawnPipe()
     { 
-        Instantiate(pipe, transform.position, transform.rotation); }
+         float lowestpoint = transform.position.y - heightOffset;
+          float highestpoint = transform.position.y + heightOffset;
+
+        Instantiate(pipe, new Vector3(transform.position.x,Random.Range(lowestpoint, highestpoint), 0), transform.rotation); 
+    }
    
-    
-   
+
+
 }
 
