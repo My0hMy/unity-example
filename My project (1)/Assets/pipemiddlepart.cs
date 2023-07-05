@@ -1,14 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Runtime.CompilerServices;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class BirdScript : MonoBehaviour
+public class pipemiddlepart : MonoBehaviour
 {
-    public Rigidbody2D myRigidBody;
     public LogicScript logic;
-    public bool birdIsAlive = true;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,15 +15,13 @@ public class BirdScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) == true && birdIsAlive)
-        {
-            myRigidBody.velocity = Vector2.up * 10;
-
-        }
+        
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        logic.gameOver();
-        birdIsAlive = false;
+    private void OnTriggerEnter2D(Collider2D collision)
+    {if (collision.gameObject.layer == 3)
+        {
+            logic.addScore(1);
+        }
+        
     }
 }
