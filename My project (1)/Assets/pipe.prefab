@@ -269,7 +269,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2774493888971768066}
-  - component: {fileID: 6220879214000184083}
+  - component: {fileID: 7581371913261935112}
   m_Layer: 0
   m_Name: pipe
   m_TagString: Untagged
@@ -294,7 +294,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &6220879214000184083
+--- !u!114 &7581371913261935112
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -303,7 +303,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 6876715907778042725}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 895574b91f06f4b40b25109414abc47d, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fb4d5ee7aa926f4d88c907d58ddde0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  movespeed: 5
+  deadZone: -60

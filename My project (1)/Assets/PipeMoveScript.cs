@@ -6,7 +6,7 @@ public class PipeMoveScript : MonoBehaviour
 {
 
     public float movespeed = 5; 
-
+    public float deadZone = -60;
    
     void Start()
     {
@@ -16,7 +16,14 @@ public class PipeMoveScript : MonoBehaviour
 
 
     void Update()
-    {
-        transform.position = transform.position + (Vector3.left * movespeed) * Time.deltaTime; 
+ {
+    transform.position = transform.position + (Vector3.left * movespeed) * Time.deltaTime;
+
+     if (transform.position.x < deadZone)
+     {
+        Destroy(gameObject);
+     }
+   
+
     }
 }

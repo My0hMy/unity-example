@@ -11,7 +11,7 @@ public class piping : MonoBehaviour
     public float spawnRate = 2;
     private float timer = 0;
     public float heightOffset = 10;
-    public float Noman = -45;
+   
 
     void Start()
     {
@@ -21,6 +21,10 @@ public class piping : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+      
+
+
+
 
         if (timer < spawnRate)
         {
@@ -32,12 +36,8 @@ public class piping : MonoBehaviour
             timer = 0;
         }
 
-    if (transform.position.x < Noman){
-    Debug.Log("Pipe deleted");
-    Destroy(gameObject);
-}
-
-    }
+     
+     }
 
     void SpawnPipe()
     { 
