@@ -270,6 +270,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2774493888971768066}
   - component: {fileID: 6220879214000184083}
+  - component: {fileID: 241922443031067753}
   m_Layer: 0
   m_Name: pipe
   m_TagString: Untagged
@@ -307,3 +308,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+--- !u!114 &241922443031067753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6876715907778042725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb4d5ee7aa926f4d88c907d58ddde0a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movespeed: 5
+  deadzone: -28
